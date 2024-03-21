@@ -1,0 +1,24 @@
+{
+	"name": "@utility/string",
+	"version": "0.1.0",
+	"tasks": {
+		"coverage": "deno coverage --include=src --lcov > coverage/lcov.info"
+	},
+	"test": {
+	},
+	"exports": "./mod.ts",
+	"publish": {
+		"include": [
+			"LICENSE",
+			"README.md",
+			"mod.ts",
+			"README.md",
+			"deno.json",
+			"deno.lock",
+			"src/**/*.ts"
+		],
+		"exclude": [
+			"test/"
+		]
+	}
+}
