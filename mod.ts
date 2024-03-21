@@ -1,14 +1,11 @@
 /**
  * @module
- * A module providing date utility functions.
+ * A module providing string utility functions.
  *
  * @example
  * ```ts
- * isIsoDate("2022-12-27T07:40:25.551Z");
- * // => true
- *
- * isIsoDate("25/12/2022");
- * // => false
+ * underscoreToCamelCase("hello_world");
+ * // => Hello World
  * ```
  */
 

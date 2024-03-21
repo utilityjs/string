@@ -1,7 +1,7 @@
 /**
- * Check if provided string is valid iso date
+ * Converts provided underscore format string to camel case
  *
- * @param {string} value The value to convert underscore format to camel case
+ * @param {string} value The value to convert
  * @return {boolean} Returns `true` if `value` is a valid iso date, else `false`.
  * @example
  * ```ts
