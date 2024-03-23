@@ -5,19 +5,19 @@ A String utility library
 Deno
 
 ```shell
-deno add @utility/date
+deno add @utility/string
 ```
 
 Node
 
 ```shell
-npx jsr add @utility/date
+npx jsr add @utility/string
 ```
 
 Bun
 
 ```shell
-bunx jsr add @utility/date
+bunx jsr add @utility/string
 ```
 
 Example
