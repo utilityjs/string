@@ -10,9 +10,9 @@
  * ```
  */
 export function underscoreToCamelCase(value: string): string {
-	value = value.charAt(0).toUpperCase() + value.slice(1);
-	value = value.replace(/_(.)/g, (_match: string, letter) => {
-		return ` ${letter.toUpperCase()}`;
-	});
-	return value.replace("_", " ");
+  value = value.charAt(0).toUpperCase() + value.slice(1);
+  value = value.replace(/_(.)/g, (_match: string, letter) => {
+    return ` ${letter.toUpperCase()}`;
+  });
+  return value.replace("_", " ");
 }

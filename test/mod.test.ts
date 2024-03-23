@@ -4,14 +4,14 @@ import { underscoreToCamelCase } from "../mod.ts";
 
 describe("string", function() {
 
-	it("underscoreToCamelCase()", function() {
-		assertEquals(
-			underscoreToCamelCase("hello_world"),
-			"Hello World"
-		);
-		assertEquals(
-			underscoreToCamelCase("_hello_world_"),
-			" Hello World "
-		);
-	});
+  it("underscoreToCamelCase()", function() {
+    assertEquals(
+      underscoreToCamelCase("hello_world"),
+      "Hello World"
+    );
+    assertEquals(
+      underscoreToCamelCase("_hello_world_"),
+      " Hello World "
+    );
+  });
 });

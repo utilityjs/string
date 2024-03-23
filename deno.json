@@ -1,28 +1,28 @@
 {
-	"name": "@utility/string",
-	"version": "0.1.1",
-	"tasks": {
-		"coverage": "deno coverage --include=src --lcov > coverage/lcov.info"
-	},
-	"test": {
-	},
-	"exports": "./mod.ts",
-	"publish": {
-		"include": [
-			"LICENSE",
-			"README.md",
-			"mod.ts",
-			"README.md",
-			"deno.json",
-			"deno.lock",
-			"src/**/*.ts"
-		],
-		"exclude": [
-			"test/"
-		]
-	},
-	"imports": {
-		"@std/assert": "jsr:@std/assert@^0.220.1",
-		"@std/testing": "jsr:@std/testing@^0.220.1"
-	}
+  "name": "@utility/string",
+  "version": "0.1.1",
+  "tasks": {
+    "coverage": "deno coverage --include=src --lcov > coverage/lcov.info"
+  },
+  "test": {
+  },
+  "exports": "./mod.ts",
+  "publish": {
+    "include": [
+      "LICENSE",
+      "README.md",
+      "mod.ts",
+      "README.md",
+      "deno.json",
+      "deno.lock",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "test/"
+    ]
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^0.220.1",
+    "@std/testing": "jsr:@std/testing@^0.220.1"
+  }
 }

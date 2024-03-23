@@ -3,20 +3,22 @@
 A String utility library
 
 Deno
+
 ```shell
 deno add @utility/date
 ```
 
 Node
+
 ```shell
 npx jsr add @utility/date
 ```
 
 Bun
+
 ```shell
 bunx jsr add @utility/date
 ```
-
 
 Example
 
