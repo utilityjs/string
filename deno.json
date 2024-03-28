@@ -2,7 +2,7 @@
   "name": "@utility/string",
   "version": "0.2.0",
   "tasks": {
-    "coverage": "deno task test --coverage=./dist/coverage && deno coverage --include=src --lcov > ./dist/coverage/lcov.info",
+    "coverage": "deno task test --coverage=./dist/coverage && deno coverage --include=src --lcov ./dist/coverage > ./dist/coverage/lcov.info",
     "test": "deno test"
   },
   "exports": "./mod.ts",
