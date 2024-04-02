@@ -1,6 +1,13 @@
-# @utility/string
+# 🪢 String
 
-A String utility library
+[![JSR Version](https://jsr.io/badges/@utility/string)](https://jsr.io/@utility/string)
+[![JSR Score](https://jsr.io/badges/@utility/string/score)](https://jsr.io/@utility/string/score)
+[![ci](https://github.com/utilityjs/string/actions/workflows/test.yml/badge.svg)](https://github.com/utilityjs/string/actions/workflows/test.yml)
+
+Collection of string utility functions
+
+Install
+------
 
 Deno
 
@@ -20,7 +27,9 @@ Bun
 bunx jsr add @utility/string
 ```
 
-Example
+
+Usage
+-----
 
 ```typescript
 import { underscoreToCamelCase } from "@utility/string";
@@ -28,3 +37,7 @@ import { underscoreToCamelCase } from "@utility/string";
 underscoreToCamelCase("hello_world");
 // => Hello World
 ```
+
+LICENSE
+-------
+MIT
