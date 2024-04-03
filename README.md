@@ -6,8 +6,7 @@
 
 Collection of string utility functions
 
-Install
-------
+## Install
 
 Deno
 
@@ -27,9 +26,7 @@ Bun
 bunx jsr add @utility/string
 ```
 
-
-Usage
------
+## Usage
 
 ```typescript
 import { underscoreToCamelCase } from "@utility/string";
@@ -38,6 +35,6 @@ underscoreToCamelCase("hello_world");
 // => Hello World
 ```
 
-LICENSE
--------
+## LICENSE
+
 MIT
