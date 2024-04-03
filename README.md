@@ -1,8 +1,9 @@
-# 🪢 String
+# @utility/string
 
 [![JSR Version](https://jsr.io/badges/@utility/string)](https://jsr.io/@utility/string)
 [![JSR Score](https://jsr.io/badges/@utility/string/score)](https://jsr.io/@utility/string/score)
 [![ci](https://github.com/utilityjs/string/actions/workflows/test.yml/badge.svg)](https://github.com/utilityjs/string/actions/workflows/test.yml)
+[![License](https://img.shields.io/github/license/utilityjs/string.svg?label=License)](/LICENSE)
 
 Collection of string utility functions
 
@@ -34,7 +35,3 @@ import { underscoreToCamelCase } from "@utility/string";
 underscoreToCamelCase("hello_world");
 // => Hello World
 ```
-
-## LICENSE
-
-MIT
