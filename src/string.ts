@@ -5,7 +5,7 @@
  * @return {string} Returns the title cased string.
  * @example
  * ```ts
- * underscoreToCamelCase("hello_world");
+ * underscoreToTitleCase("hello_world");
  * // => Hello World
  * ```
  */
