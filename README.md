@@ -31,8 +31,8 @@ bunx jsr add @utility/string
 ## Usage
 
 ```typescript
-import { underscoreToCamelCase } from "@utility/string";
+import { underscoreToTitleCase } from "@utility/string";
 
-underscoreToCamelCase("hello_world");
+underscoreToTitleCase("hello_world");
 // => Hello World
 ```
