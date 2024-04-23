@@ -1,10 +1,12 @@
 import { assertEquals, describe, it } from "../test_deps.ts";
 
-import { underscoreToCamelCase } from "../mod.ts";
+import { underscoreToTitleCase } from "../mod.ts";
 
 describe("string", function () {
-  it("underscoreToCamelCase()", function () {
-    assertEquals(underscoreToCamelCase("hello_world"), "Hello World");
-    assertEquals(underscoreToCamelCase("_hello_world_"), " Hello World ");
+  it("underscoreToTitleCase()", function () {
+    assertEquals(underscoreToTitleCase("hello_world"), "Hello World");
+    assertEquals(underscoreToTitleCase("_hello_world_"), " Hello World ");
+    assertEquals(underscoreToTitleCase(null), "");
+    assertEquals(underscoreToTitleCase(undefined), "");
   });
 });

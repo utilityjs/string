@@ -1,7 +1,7 @@
 name: Canary
 on:
   schedule:
-    - cron: 0 3 * * *
+    - cron: 0 3 * * 0
 jobs:
   canary:
     name: Deno Canary
@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Deno
-        uses: denoland/setup-deno@v2
+        uses: denoland/setup-deno@v1
         with:
           deno-version: ${{ matrix.deno_version }}
 
