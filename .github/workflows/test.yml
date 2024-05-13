@@ -31,3 +31,4 @@ jobs:
         with:
           name: ${{ matrix.os }}-${{ matrix.deno }}
           files: ./dist/coverage/lcov.info
+          token: "${{ secrets.CODECOV_TOKEN }}"
