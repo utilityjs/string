@@ -8,26 +8,6 @@
 
 Collection of string utility functions
 
-## Install
-
-Deno
-
-```shell
-deno add @utility/string
-```
-
-Node
-
-```shell
-npx jsr add @utility/string
-```
-
-Bun
-
-```shell
-bunx jsr add @utility/string
-```
-
 ## Usage
 
 ```typescript

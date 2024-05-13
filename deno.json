@@ -1,6 +1,6 @@
 {
   "name": "@utility/string",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "tasks": {
     "coverage": "deno task test --coverage=./dist/coverage && deno coverage --include=src --lcov ./dist/coverage > ./dist/coverage/lcov.info",
     "test": "deno test"
