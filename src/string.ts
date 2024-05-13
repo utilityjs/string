@@ -1,3 +1,5 @@
+import { toString } from "./utils.ts";
+
 /**
  * Converts provided underscore format string to camel case
  *
@@ -12,7 +14,7 @@
 export function underscoreToTitleCase(
   value: string | null | undefined,
 ): string {
-  let strValue = _toString(value);
+  let strValue = toString(value);
   strValue = strValue.charAt(0).toUpperCase() + strValue.slice(1);
   strValue = strValue.replace(/_(.)/g, (_match: string, letter) => {
     return ` ${letter.toUpperCase()}`;
@@ -20,23 +22,33 @@ export function underscoreToTitleCase(
   return strValue.replace("_", " ");
 }
 
-/** Used as references for various `Number` constants. */
-const INFINITY = 1 / 0;
-
-function _toString(value: any): string {
-  if (value == null) {
-    return "";
+/**
+ * Converts a string value to a boolean.
+ * @param {string | null | undefined} value - The input value to convert.
+ * @returns {boolean} The boolean representation of the input value.
+ * @example
+ * ```ts
+ * const trueValue = toBoolean("true"); // true
+ * const falseValue = toBoolean("false"); // false
+ * const nullValue = toBoolean(null); // false
+ * const undefinedValue = toBoolean(undefined); // false
+ * ```
+ */
+export function toBoolean(value: string | null | undefined): boolean {
+  if (value === null || value === undefined) {
+    return false;
   }
-  // Exit early for strings to avoid a performance hit in some environments.
-  if (typeof value === "string") {
-    return value;
+  switch (value.toLowerCase().trim()) {
+    case "true":
+    case "yes":
+    case "1":
+      return true;
+    case "false":
+    case "no":
+    case "0":
+    case null:
+      return false;
+    default:
+      return Boolean(value);
   }
-  if (Array.isArray(value)) {
-    // Recursively convert values (susceptible to call stack limits).
-    return `${
-      value.map((other) => (other == null ? other : _toString(other)))
-    }`;
-  }
-  const result = `${value}`;
-  return result === "0" && 1 / value === -INFINITY ? "-0" : result;
 }
