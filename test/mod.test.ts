@@ -1,6 +1,6 @@
 import { assertEquals, describe, it } from "../test_deps.ts";
 
-import { toBoolean, underscoreToTitleCase } from "../mod.ts";
+import { toBoolean, toKebabCase, underscoreToTitleCase } from "../mod.ts";
 
 describe("string", function () {
   it("underscoreToTitleCase()", function () {
@@ -9,6 +9,11 @@ describe("string", function () {
     assertEquals(underscoreToTitleCase("_hello_world_"), " Hello World ");
     assertEquals(underscoreToTitleCase(null), "");
     assertEquals(underscoreToTitleCase(undefined), "");
+  });
+
+  it("toKebabCase()", function () {
+    assertEquals(toKebabCase("HelloWorld"), "hello-world");
+    assertEquals(toKebabCase("hello_world"), "hello-world");
   });
 
   it("toBoolean()", function () {

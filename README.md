@@ -10,9 +10,18 @@ Collection of string utility functions
 
 ## Usage
 
+**underscoreToTitleCase** - Converts provided underscore format string to camel case
 ```typescript
 import { underscoreToTitleCase } from "@utility/string";
 
 underscoreToTitleCase("hello_world");
 // => Hello World
+```
+
+
+**toBoolean** - Converts a string value to a boolean.
+```typescript
+import { toBoolean } from "@utility/string";
+
+const trueValue = toBoolean("true"); // true
 ```

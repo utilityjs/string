@@ -23,6 +23,39 @@ export function underscoreToTitleCase(
 }
 
 /**
+ * Converts provided string into kebab case
+ *
+ * @param {string} value The value to convert
+ * @return {string} Returns the kebab cased string.
+ * @example
+ * ```ts
+ * toKebabCase("HelloWorld");
+ * // => hello-world
+ *
+ * toKebabCase("hello_world")
+ * // => hello-world
+ * ```
+ */
+export function toKebabCase(value: string | null | undefined): string {
+  const strValue = toString(value);
+  let kebabCase = '';
+  for (let i = 0; i < strValue.length; i++) {
+    const char = strValue[i];
+    if (char.toUpperCase() === char && char.toLowerCase() !== char) {
+      if (i > 0) {
+        kebabCase += '-';
+      }
+      kebabCase += char.toLowerCase();
+    } else if (char === ' ' || char === '_' || char === '-') {
+      kebabCase += '-';
+    } else {
+      kebabCase += char;
+    }
+  }
+  return kebabCase;
+}
+
+/**
  * Converts a string value to a boolean.
  * @param {string | null | undefined} value - The input value to convert.
  * @returns {boolean} The boolean representation of the input value.
